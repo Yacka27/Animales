@@ -3,6 +3,10 @@ public class Animal {
     private String tipo;
     private String genero;
 
+    public Animal() {
+        
+    }
+
     public Animal(String nombre, String tipo, String genero) {
         this.nombre = nombre;
         this.tipo = tipo;
@@ -13,11 +17,24 @@ public class Animal {
         return nombre;
     }
 
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
     public String getTipo() {
         return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 
     public String getGenero() {
         return genero;
     }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
 }
+
